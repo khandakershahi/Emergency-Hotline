@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;600;700&family=Inter:wght@400;600;800&family=Roboto:wght@400;500;700&display=swap');
+
+
+/* Banner Titles */
+.banner-title-eng {
+  font-family: 'Hind Madurai', sans-serif;
+  font-weight: 700; /* Bold */
+  font-size: 40px;
+}
+
+.banner-title-bn {
+  font-family: 'Hind Madurai', sans-serif;
+  font-weight: 600; /* SemiBold */
+  font-size: 40px;
+}
+
+/* Card Titles */
+.card-tel-num {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700; /* Bold */
+  font-size: 32px;
+}
+
+.card-title {
+  font-family: 'Hind Madurai', sans-serif;
+  font-weight: 700; /* Bold */
+  font-size: 24px;
+}
+
+/* Navigation Lead */
+.nav-lead {
+  font-family: 'Hind Madurai', sans-serif;
+  font-weight: 600; /* SemiBold */
+  font-size: 20px;
+}
+
+/* Call History */
+.call-history {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 20px;
+}
+
+/* History Card Title */
+.history-card-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600; /* Semi Bold */
+  font-size: 18px;
+}
+
+/* Card Description */
+.card-description {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; /* Regular */
+  font-size: 18px;
+}
+
+/* Card Category / Call History Text */
+.card-category {
+  font-family: 'Hind Madurai', sans-serif;
+  font-weight: 400; /* Regular */
+  font-size: 18px;
+}
+
+/* Navigation Counter */
+.nav-counter {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800; /* Black */
+  font-size: 16px;
+}
+
+/* Copy / Clear */
+.copy-clear {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600; /* Semi Bold */
+  font-size: 16px;
+}
+
+/* Card Copy Call */
+.card-copy-call {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; /* Regular */
+  font-size: 16px;
+}
