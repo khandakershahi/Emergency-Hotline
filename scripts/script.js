@@ -17,8 +17,8 @@ heart();
 
 // call function
 function callService(id) {
-    const serviceName = document.getElementById('service-name').innerText;
-    const serviceNumber = document.getElementById('service-number').innerText;
+    const serviceName = document.getElementById('service-name-national').innerText;
+    const serviceNumber = document.getElementById('service-number-national').innerText;
 
     document.getElementById(id).addEventListener('click', function () {
         alert(`calling ${serviceName} ${serviceNumber}...`)
@@ -29,17 +29,18 @@ function callService(id) {
 callService('call-national');
 
 // copy function
-function copyNumber(id) {
-    let copyNumber = document.getElementById('service-number');
+function copyNumberNational() {
+    let copyNumber = document.getElementById('service-number-national');
+     navigator.clipboard.writeText(copyNumber.innerText);
 
-    navigator.clipboard.writeText(copyNumber.innerText);
-
-    document.getElementById(id).addEventListener('click', function () {
+    document.getElementById('copy-number-national').addEventListener('click', function () {
+        
         alert("Number copied: " + copyNumber.innerText);
     })
 
-
 }
+copyNumberNational()
 
-copyNumber('copy-number-national');
+
+
 
