@@ -41,13 +41,13 @@
         <div
           class="flex justify-center items-center gap-2.5 bg-[#41ff6b1a] w-[123px] h-[52px] rounded-[50px]"
         >
-          <span class="nav-counter">100</span>
+          <span id="coin-count" class="nav-counter">100</span>
           <img class="w-[30px] h-[30px]" src="./assets/coin.png" alt="" />
         </div>
         <div
           class="flex justify-center items-center gap-2.5 bg-[#00A63E] w-[123px] h-[52px] rounded-[50px] text-white"
         >
-          <span class="nav-counter">0</span>
+          <span id="copy-counter" class="nav-counter">0</span>
           <span class="copy-clear">copy</span>
         </div>
       </div>
@@ -105,6 +105,49 @@
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button id="call-national"
+                  class="btn !bg-[#00A63E] !text-white hover:!bg-gray-300 flex-1 !rounded-[8px] "
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="card bg-white w-105 shadow-sm">
+            <div class="card-body  gap-0">
+              <div class="flex justify-between items-center mb-[16px]">
+                <div
+                  class="bg-[#dfefffff] w-[60px] h-[60px] flex justify-center items-center rounded-2xl"
+                >
+                  <img
+                    class="w-[32px] h-[32px]"
+                    src="./assets/police.png"
+                    alt=""
+                  />
+                </div>
+                 <i id="" class="heart-click fa-regular fa-heart text-2xl cursor-pointer"></i>
+              </div>
+              <div class="mb-[24px]">
+                <h2 id="service-name-police" class="card-title card-title-text">
+                  Police Helpline Number
+                </h2>
+                <p  class="card-description">Police</p>
+              </div>
+              <div class="mb-[24px]">
+                <h3 id="service-number-police" class="card-title card-tel-num">9990</h3>
+                <div
+                  class="flex w-fit px-[16px] py-[6px] bg-[#f2f2f2ff] rounded-[99px]"
+                >
+                  <p class="card-category">Police</p>
+                </div>
+              </div>
+              <div class="card-actions justify-between mb-[24px]">
+                <button id="copy-number-police"
+                  class="btn btn-default flex-1 !rounded-[8px] text-gray-500"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button id="call-police"
                   class="btn  !bg-[#00A63E]  !text-white  flex-1 !rounded-[8px] "
                 >
                   <i class="fa-solid fa-phone"></i> Call
@@ -128,13 +171,13 @@
                  <i id="" class="heart-click fa-regular fa-heart text-2xl cursor-pointer"></i>
               </div>
               <div class="mb-[24px]">
-                <h2 class="card-title card-title-text">
+                <h2 id="service-name-national" class="card-title card-title-text">
                   National Emergency Number
                 </h2>
-                <p class="card-description">National Emergency</p>
+                <p  class="card-description">National Emergency</p>
               </div>
               <div class="mb-[24px]">
-                <h3 class="card-title card-tel-num">999</h3>
+                <h3 id="service-number-national" class="card-title card-tel-num">999</h3>
                 <div
                   class="flex w-fit px-[16px] py-[6px] bg-[#f2f2f2ff] rounded-[99px]"
                 >
@@ -142,98 +185,12 @@
                 </div>
               </div>
               <div class="card-actions justify-between mb-[24px]">
-                <button
+                <button id="copy-number-national"
                   class="btn btn-default flex-1 !rounded-[8px] text-gray-500"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
-                <button
-                  class="btn  !bg-[#00A63E]  !text-white  flex-1 !rounded-[8px] "
-                >
-                  <i class="fa-solid fa-phone"></i> Call
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- card -->
-          <div class="card bg-white w-105 shadow-sm">
-            <div class="card-body  gap-0">
-              <div class="flex justify-between items-center mb-[16px]">
-                <div
-                  class="bg-[#FFE3E2] w-[60px] h-[60px] flex justify-center items-center rounded-2xl"
-                >
-                  <img
-                    class="w-[32px] h-[32px]"
-                    src="./assets/emergency.png"
-                    alt=""
-                  />
-                </div>
-                 <i id="" class="heart-click fa-regular fa-heart text-2xl cursor-pointer"></i>
-              </div>
-              <div class="mb-[24px]">
-                <h2 class="card-title card-title-text">
-                  National Emergency Number
-                </h2>
-                <p class="card-description">National Emergency</p>
-              </div>
-              <div class="mb-[24px]">
-                <h3 class="card-title card-tel-num">999</h3>
-                <div
-                  class="flex w-fit px-[16px] py-[6px] bg-[#f2f2f2ff] rounded-[99px]"
-                >
-                  <p class="card-category">All</p>
-                </div>
-              </div>
-              <div class="card-actions justify-between mb-[24px]">
-                <button
-                  class="btn btn-default flex-1 !rounded-[8px] text-gray-500"
-                >
-                  <i class="fa-regular fa-copy"></i> Copy
-                </button>
-                <button
-                  class="btn  !bg-[#00A63E]  !text-white  flex-1 !rounded-[8px] "
-                >
-                  <i class="fa-solid fa-phone"></i> Call
-                </button>
-              </div>
-            </div>
-          </div>
-          <!-- card -->
-          <div class="card bg-white w-105 shadow-sm">
-            <div class="card-body  gap-0">
-              <div class="flex justify-between items-center mb-[16px]">
-                <div
-                  class="bg-[#FFE3E2] w-[60px] h-[60px] flex justify-center items-center rounded-2xl"
-                >
-                  <img
-                    class="w-[32px] h-[32px]"
-                    src="./assets/emergency.png"
-                    alt=""
-                  />
-                </div>
-                 <i id="" class="heart-click fa-regular fa-heart text-2xl cursor-pointer"></i>
-              </div>
-              <div class="mb-[24px]">
-                <h2 class="card-title card-title-text">
-                  National Emergency Number
-                </h2>
-                <p class="card-description">National Emergency</p>
-              </div>
-              <div class="mb-[24px]">
-                <h3 class="card-title card-tel-num">999</h3>
-                <div
-                  class="flex w-fit px-[16px] py-[6px] bg-[#f2f2f2ff] rounded-[99px]"
-                >
-                  <p class="card-category">All</p>
-                </div>
-              </div>
-              <div class="card-actions justify-between mb-[24px]">
-                <button
-                  class="btn btn-default flex-1 !rounded-[8px] text-gray-500"
-                >
-                  <i class="fa-regular fa-copy"></i> Copy
-                </button>
-                <button
+                <button id="call-national"
                   class="btn  !bg-[#00A63E]  !text-white  flex-1 !rounded-[8px] "
                 >
                   <i class="fa-solid fa-phone"></i> Call
@@ -246,7 +203,7 @@
         
         </div>
         <!-- history  -->
-        <div class="call-hitory border-2 border-purple-500">
+        <div class="call-hitory">
           <div class="card bg-white w-full md:w-92 shadow-sm h-[100%] p-6">
             <!-- history header` -->
             <div class="history-header flex justify-between mb-6">
@@ -254,32 +211,16 @@
                 <i class="fa-regular fa-clock text-2xl mr-2"></i>
                 <h3 class="call-history">Call History</h3>
               </div>
-              <div
-                class="flex justify-center items-center  bg-[#00A63E] w-[123px] h-[52px] rounded-[50px] text-white"
-              >
-                
-                <span class="copy-clear">Clear</span>
-              </div>
+              
+              <button id="clear"
+                class="flex justify-center items-center  bg-[#00A63E] w-[123px] h-[52px] rounded-[50px] text-white cursor-pointer copy-clear"
+              >Clear
+            </button>
             </div>
             <!-- history body  -->
-            <div class="history-body bg-[#FAFAFA] flex justify-between gap-4 items-center p-4 rounded-[8px] mb-2">
-                <div class="left">
-                    <h3 class="history-card-title">Fire Service Number</h3>
-                    <p class="card-category">999</p>
-                </div>
-                <div class="right">
-                  <p class="card-category">11:36:58 AM</p>
-                </div>
-            </div>
-            <div class="history-body bg-[#FAFAFA] flex justify-between gap-4 items-center p-4 rounded-[8px] mb-2">
-                <div class="left">
-                    <h3 class="history-card-title">Fire Service Number</h3>
-                    <p class="card-category">999</p>
-                </div>
-                <div class="right">
-                  <p class="card-category">11:36:58 AM</p>
-                </div>
-            </div>
+           <div id="history-body-wrapper" class="history-wrapper">
+             
+           </div>
             
           </div>
         </div>
