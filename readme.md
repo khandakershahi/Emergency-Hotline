@@ -7,7 +7,7 @@ This project is about design a flower website from Figma to HTML, CSS and JS fro
 
 ## Technologies
 - HTML
-- CSS
+- CSS( Vanilla , Tailwind CSS , DaisyUI, FontAwesome )
 - JavaScript
 
 
@@ -36,8 +36,8 @@ You have to create a `Readme.md` file. and write down following questions. Dont 
 ### 6. Answer the following questions clearly:
 
 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
-
-  Ans: getElementById is used for to target one html element, getElementsByClassName is used for multiple html element and it is an array, querySelector is used for single class and it always select the first element, querySelectorAll is used for to get all the same class elements.
+   
+   Ans: getElementById is used for to target one html element, getElementsByClassName is used for multiple html element and it is an array, querySelector is used for single class and it always select the first element, querySelectorAll is used for to get all the same class elements.
 
 2. How do you **create and insert a new element into the DOM**?
 
