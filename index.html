@@ -33,9 +33,9 @@
       </div>
       <div class="btn-grp flex gap-5">
         <div
-          class="flex justify-center items-center gap-2.5 bg-[#41ff6b1a] w-[123px] h-[52px] rounded-[50px]"
+          class="flex justify-center items-center bg-[#41ff6b1a] w-[123px] h-[52px] rounded-[50px]"
         >
-          <span id="heart-count" class="nav-counter">0</span>
+          <span id="heart-count" class="nav-counter mr-2 w-6">0</span>
           <img class="w-[30px] h-[30px]" src="./assets/heart.png" alt="" />
         </div>
         <div
@@ -69,8 +69,8 @@
       <section class="flex flex-col md:flex-row justify-between mt-[48px] px-4 md:px-[60px] gap-[30px] ">
         <!-- service  -->
         <div class="flex flex-wrap card-container gap-[30px]">
-          <!-- card -->
-          <div class="card bg-white w-105 shadow-sm">
+          <!-- card national-->
+          <div class="card bg-white w-104 shadow-sm">
             <div class="card-body  gap-0">
               <div class="flex justify-between items-center mb-[16px]">
                 <div
@@ -105,15 +105,15 @@
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button id="call-national"
-                  class="btn !bg-[#00A63E] !text-white hover:!bg-gray-300 flex-1 !rounded-[8px] "
+                  class="btn !bg-[#00A63E] !text-white hover:!bg-gray-400 flex-1 !rounded-[8px] "
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
             </div>
           </div>
-          <!-- card -->
-          <div class="card bg-white w-105 shadow-sm">
+          <!-- card police -->
+          <div class="card bg-white w-104 shadow-sm">
             <div class="card-body  gap-0">
               <div class="flex justify-between items-center mb-[16px]">
                 <div
@@ -134,7 +134,7 @@
                 <p  class="card-description">Police</p>
               </div>
               <div class="mb-[24px]">
-                <h3 id="service-number-police" class="card-title card-tel-num">9990</h3>
+                <h3 id="service-number-police" class="card-title card-tel-num">999</h3>
                 <div
                   class="flex w-fit px-[16px] py-[6px] bg-[#f2f2f2ff] rounded-[99px]"
                 >
@@ -148,50 +148,179 @@
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
                 <button id="call-police"
-                  class="btn  !bg-[#00A63E]  !text-white  flex-1 !rounded-[8px] "
+                  class="btn  !bg-[#00A63E]  !text-white hover:!bg-gray-400  flex-1 !rounded-[8px] "
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>
               </div>
             </div>
           </div>
-          <!-- card -->
-          <div class="card bg-white w-105 shadow-sm">
+          <!-- card fire -->
+          <div class="card bg-white w-104 shadow-sm">
             <div class="card-body  gap-0">
               <div class="flex justify-between items-center mb-[16px]">
                 <div
-                  class="bg-[#FFE3E2] w-[60px] h-[60px] flex justify-center items-center rounded-2xl"
+                  class="bg-[#ffe3e2ff] w-[60px] h-[60px] flex justify-center items-center rounded-2xl"
                 >
                   <img
                     class="w-[32px] h-[32px]"
-                    src="./assets/emergency.png"
+                    src="./assets/fire-service.png"
                     alt=""
                   />
                 </div>
                  <i id="" class="heart-click fa-regular fa-heart text-2xl cursor-pointer"></i>
               </div>
               <div class="mb-[24px]">
-                <h2 id="service-name-national" class="card-title card-title-text">
-                  National Emergency Number
+                <h2 id="service-name-fire" class="card-title card-title-text">
+                  Fire Service Number
                 </h2>
-                <p  class="card-description">National Emergency</p>
+                <p  class="card-description">Fire Service</p>
               </div>
               <div class="mb-[24px]">
-                <h3 id="service-number-national" class="card-title card-tel-num">999</h3>
+                <h3 id="service-number-fire" class="card-title card-tel-num">999</h3>
                 <div
                   class="flex w-fit px-[16px] py-[6px] bg-[#f2f2f2ff] rounded-[99px]"
                 >
-                  <p class="card-category">All</p>
+                  <p class="card-category">Fire</p>
                 </div>
               </div>
               <div class="card-actions justify-between mb-[24px]">
-                <button id="copy-number-national"
+                <button id="copy-number-fire"
                   class="btn btn-default flex-1 !rounded-[8px] text-gray-500"
                 >
                   <i class="fa-regular fa-copy"></i> Copy
                 </button>
-                <button id="call-national"
-                  class="btn  !bg-[#00A63E]  !text-white  flex-1 !rounded-[8px] "
+                <button id="call-fire"
+                  class="btn  !bg-[#00A63E] hover:!bg-gray-400  !text-white  flex-1 !rounded-[8px] "
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card ambulance -->
+          <div class="card bg-white w-104 shadow-sm">
+            <div class="card-body  gap-0">
+              <div class="flex justify-between items-center mb-[16px]">
+                <div
+                  class="bg-[#ffe3e2ff] w-[60px] h-[60px] flex justify-center items-center rounded-2xl"
+                >
+                  <img
+                    class="w-[32px] h-[32px]"
+                    src="./assets/ambulance.png"
+                    alt=""
+                  />
+                </div>
+                 <i id="" class="heart-click fa-regular fa-heart text-2xl cursor-pointer"></i>
+              </div>
+              <div class="mb-[24px]">
+                <h2 id="service-name-ambulance" class="card-title card-title-text">
+                  Ambulance Service
+                </h2>
+                <p  class="card-description">Ambulance</p>
+              </div>
+              <div class="mb-[24px]">
+                <h3 id="service-number-ambulance" class="card-title card-tel-num">1994-999999</h3>
+                <div
+                  class="flex w-fit px-[16px] py-[6px] bg-[#f2f2f2ff] rounded-[99px]"
+                >
+                  <p class="card-category">Health</p>
+                </div>
+              </div>
+              <div class="card-actions justify-between mb-[24px]">
+                <button id="copy-number-ambulance"
+                  class="btn btn-default flex-1 !rounded-[8px] text-gray-500"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button id="call-ambulance"
+                  class="btn  !bg-[#00A63E] hover:!bg-gray-400  !text-white  flex-1 !rounded-[8px] "
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card women -->
+          <div class="card bg-white w-104 shadow-sm">
+            <div class="card-body  gap-0">
+              <div class="flex justify-between items-center mb-[16px]">
+                <div
+                  class="bg-[#ffe3e2ff] w-[60px] h-[60px] flex justify-center items-center rounded-2xl"
+                >
+                  <img
+                    class="w-[32px] h-[32px]"
+                    src="./assets/mother.png"
+                    alt=""
+                  />
+                </div>
+                 <i id="" class="heart-click fa-regular fa-heart text-2xl cursor-pointer"></i>
+              </div>
+              <div class="mb-[24px]">
+                <h2 id="service-name-women" class="card-title card-title-text">
+                  Women & Child Helpline
+                </h2>
+                <p  class="card-description">Women & Child Helpline</p>
+              </div>
+              <div class="mb-[24px]">
+                <h3 id="service-number-women" class="card-title card-tel-num">109</h3>
+                <div
+                  class="flex w-fit px-[16px] py-[6px] bg-[#f2f2f2ff] rounded-[99px]"
+                >
+                  <p class="card-category">Help</p>
+                </div>
+              </div>
+              <div class="card-actions justify-between mb-[24px]">
+                <button id="copy-number-women"
+                  class="btn btn-default flex-1 !rounded-[8px] text-gray-500"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button id="call-women"
+                  class="btn  !bg-[#00A63E] hover:!bg-gray-400  !text-white  flex-1 !rounded-[8px] "
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card corruption -->
+          <div class="card bg-white w-104 shadow-sm">
+            <div class="card-body  gap-0">
+              <div class="flex justify-between items-center mb-[16px]">
+                <div
+                  class="bg-[#dfefffff] w-[60px] h-[60px] flex justify-center items-center rounded-2xl"
+                >
+                  <img
+                    class="w-[32px] h-[32px]"
+                    src="./assets/corruption.png"
+                    alt=""
+                  />
+                </div>
+                 <i id="" class="heart-click fa-regular fa-heart text-2xl cursor-pointer"></i>
+              </div>
+              <div class="mb-[24px]">
+                <h2 id="service-name-corruption" class="card-title card-title-text">
+                  Anti-Corruption Helpline
+                </h2>
+                <p  class="card-description">Anti-Corruption</p>
+              </div>
+              <div class="mb-[24px]">
+                <h3 id="service-number-corruption" class="card-title card-tel-num">106</h3>
+                <div
+                  class="flex w-fit px-[16px] py-[6px] bg-[#f2f2f2ff] rounded-[99px]"
+                >
+                  <p class="card-category">Govt.</p>
+                </div>
+              </div>
+              <div class="card-actions justify-between mb-[24px]">
+                <button id="copy-number-corruption"
+                  class="btn btn-default flex-1 !rounded-[8px] text-gray-500"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button id="call-corruption"
+                  class="btn  !bg-[#00A63E] hover:!bg-gray-400  !text-white  flex-1 !rounded-[8px] "
                 >
                   <i class="fa-solid fa-phone"></i> Call
                 </button>

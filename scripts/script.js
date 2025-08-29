@@ -26,7 +26,7 @@ function callService(btnId, nameId, numberID) {
 
             coinCountNumber = coinCountNumber - 20;
             document.getElementById('coin-count').innerText = coinCountNumber;
-            alert(`calling ${serviceName} ${serviceNumber}...`);
+            alert(`📞 calling ${serviceName} ${serviceNumber}...`);
 
             const d = new Date();
             let time = d.toLocaleTimeString();
@@ -45,7 +45,7 @@ function callService(btnId, nameId, numberID) {
             historyData.innerHTML += newCallData;
 
         } else {
-            alert(`You don't have enough coin`);
+            alert(`❌ You don't have enough coin`);
         }
     })
 
@@ -53,6 +53,10 @@ function callService(btnId, nameId, numberID) {
 
 callService('call-national','service-name-national','service-number-national');
 callService('call-police', 'service-name-police','service-number-police')
+callService('call-fire', 'service-name-fire','service-number-fire')
+callService('call-ambulance', 'service-name-ambulance','service-number-ambulance')
+callService('call-women', 'service-name-women','service-number-women')
+callService('call-corruption', 'service-name-corruption','service-number-corruption')
 
 // history clear button
 function historyClear() {
@@ -85,6 +89,10 @@ function copyNumber(btnId, serviceNumberId) {
 }
 copyNumber('copy-number-national','service-number-national')
 copyNumber('copy-number-police','service-number-police')
+copyNumber('copy-number-fire','service-number-fire')
+copyNumber('copy-number-ambulance','service-number-ambulance')
+copyNumber('copy-number-women','service-number-women')
+copyNumber('copy-number-corruption','service-number-corruption')
 
 
 
