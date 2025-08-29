@@ -45,7 +45,7 @@ function callService(btnId, nameId, numberID) {
             historyData.innerHTML += newCallData;
 
         } else {
-            alert(`❌ You don't have enough coin`);
+            alert(`❌ You don't have enough coin, minimum 20 coin needed to call`);
         }
     })
 
